@@ -14,5 +14,4 @@ public abstract class Expression {
     public abstract String afficher();
 
     public abstract boolean evaluate();
-
 }

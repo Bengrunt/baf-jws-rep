@@ -11,18 +11,17 @@ package tp3;
  */
 public abstract class UnaryExpression extends Expression {
 
-    Constante membre;
-    public UnaryExpression(boolean valeur, Constante membre)
-    {
-        super(valeur);
+    Expression membre;
+
+    public UnaryExpression(Expression membre) {
         this.membre=membre;
     }
 
-    public void setMembre(Constante membre) {
+    public void setMembre(Expression membre) {
         this.membre = membre;
     }
 
-    public Constante getMembre() {
+    public Expression getMembre() {
         return membre;
     }
 
